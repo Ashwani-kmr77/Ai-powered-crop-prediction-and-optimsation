@@ -41,9 +41,12 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(142 50% 40%), hsl(142 60% 50%));
     --gradient-sky: linear-gradient(180deg, hsl(200 70% 50%), hsl(200 80% 60%));
     --gradient-earth: linear-gradient(135deg, hsl(38 70% 50%), hsl(38 80% 60%));
+    --gradient-success: linear-gradient(135deg, hsl(142 50% 40%), hsl(200 70% 50%));
     --shadow-soft: 0 4px 12px hsla(120, 15%, 15%, 0.08);
     --shadow-md: 0 8px 24px hsla(120, 15%, 15%, 0.12);
+    --shadow-glow: 0 0 20px hsla(142, 50%, 40%, 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;

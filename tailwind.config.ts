@@ -59,16 +59,23 @@ export default {
         },
       },
       backgroundImage: {
-        "gradient-primary": "var(--gradient-primary)",
-        "gradient-sky": "var(--gradient-sky)",
-        "gradient-earth": "var(--gradient-earth)",
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-sky': 'var(--gradient-sky)',
+        'gradient-earth': 'var(--gradient-earth)',
+        'gradient-success': 'var(--gradient-success)',
       },
       boxShadow: {
-        soft: "var(--shadow-soft)",
-        md: "var(--shadow-md)",
+        'soft': 'var(--shadow-soft)',
+        'md': 'var(--shadow-md)',
+        'glow': 'var(--shadow-glow)',
       },
-      transitionProperty: {
-        smooth: "var(--transition-smooth)",
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'spring': 'var(--transition-spring)',
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'in': 'fadeIn 0.5s ease-in',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -76,6 +83,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
         "accordion-down": {
           from: {
             height: "0",

@@ -6,10 +6,18 @@ import { CropPredictor } from "@/components/CropPredictor";
 import { PredictionResults } from "@/components/PredictionResults";
 import { StatsCard } from "@/components/StatsCard";
 
+interface FertilizerRecommendation {
+  name: string;
+  amount: number;
+  unit: string;
+  purpose: string;
+}
+
 interface PredictionResult {
   yield: number;
   crop: string;
   cropImage: string;
+  fertilizerRecommendations?: FertilizerRecommendation[];
 }
 
 interface OptimizationSuggestion {
